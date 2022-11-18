@@ -1,11 +1,7 @@
 import java.util.Arrays;
 
-public class ProductCatalog {
+class ProductCatalog {
     public static void main(String[] args) {
-        Product product1 = new Product("Knorr", "Racuchy", 7.2);
-        Product product2 = new Product("Amino", "Zupa ogórkowa", 3.9);
-        System.out.println(product1.compareTo(product2));
-
         Product[] products = new Product[7];
         products[0] = new Product("Amino", "Zupa pomidorowa", 3.90);
         products[1] = new Product("Amino", "Zupa ogórkowa", 3.90);

@@ -35,18 +35,11 @@ class Product implements Comparable<Product> {
 
     @Override
     public String toString() {
-        return "Product [name=" + name + " , producer=" + producer + ", price=" + price + "]";
+        return "Product [name=" + name + ", producer=" + producer + ", price=" + price + "]";
     }
 
     @Override
-    public int compareTo(Product p) {
-        if (price > p.price)
-            return 1;
-        else if (price < p.price)
-            return -1;
-        int producerCompare = producer.compareTo(p.producer);
-        if (producerCompare!=0)
-            return producerCompare;
-        return this.name.compareTo(p.name);
+    public int compareTo(Product o) {
+        return 0;
     }
 }
